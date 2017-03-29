@@ -1,6 +1,6 @@
 {
   "name": "MKCommonLibs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "summary": "MKCommonLibs.",
   "description": "A MKCommonLibs.",
   "homepage": "https://github.com/mukang/MKCommonLibs",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mukang/MKCommonLibs.git",
-    "tag": "0.3.0"
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -31,6 +31,11 @@
         "AFNetworking": [
 
         ]
+      },
+      "resource_bundles": {
+        "webService": [
+          "MKCommonLibs/Classes/WebService/Assets/*.png"
+        ]
       }
     },
     {
@@ -43,8 +48,8 @@
         ]
       },
       "resource_bundles": {
-        "MKCommonLibs": [
-          "MKCommonLibs/Classes/UI/Resources/*.png"
+        "ui": [
+          "MKCommonLibs/Classes/ui/Assets/*.png"
         ]
       }
     }
