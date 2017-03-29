@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKCommonLibs'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'MKCommonLibs.'
 
 # This description is used to generate tags and improve search results.
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   webService.public_header_files = 'MKCommonLibs/Classes/WebService/**/*.h'
   webService.dependency 'AFNetworking'
   webService.resource_bundles = {
-     'webService' => ['MKCommonLibs/Assets/HD4.0''.png']
+     'webService' => ['MKCommonLibs/Assets/HD4.0.png']
   }
   end
 
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   ui.public_header_files = 'MKCommonLibs/Classes/UI/**/*.h'
   ui.dependency 'AFNetworking'
   ui.resource_bundles = {
-     'ui' => ['MKCommonLibs/Assets/{HD4.0'', HD4.7''}.png']
+     'ui' => ['MKCommonLibs/Assets/{HD4.0, HD4.7}.png']
   }
   end
 end
