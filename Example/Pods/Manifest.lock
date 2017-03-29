@@ -1,0 +1,38 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - MKCommonLibs (0.1.0):
+    - MKCommonLibs/UI (= 0.1.0)
+    - MKCommonLibs/WebService (= 0.1.0)
+  - MKCommonLibs/UI (0.1.0):
+    - AFNetworking
+  - MKCommonLibs/WebService (0.1.0):
+    - AFNetworking
+
+DEPENDENCIES:
+  - MKCommonLibs (from `../`)
+
+EXTERNAL SOURCES:
+  MKCommonLibs:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  MKCommonLibs: 439222dfd8b9106f98be358ea66c238a8fb979a6
+
+PODFILE CHECKSUM: c256c6a678dda17cffa9b825555995105a8dae18
+
+COCOAPODS: 1.1.1

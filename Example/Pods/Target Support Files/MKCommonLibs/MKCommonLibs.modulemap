@@ -1,0 +1,6 @@
+framework module MKCommonLibs {
+  umbrella header "MKCommonLibs-umbrella.h"
+
+  export *
+  module * { export * }
+}

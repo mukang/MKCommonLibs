@@ -1,0 +1,47 @@
+{
+  "name": "MKCommonLibs",
+  "version": "0.1.0",
+  "summary": "MKCommonLibs.",
+  "description": "A MKCommonLibs.",
+  "homepage": "https://github.com/mukang/MKCommonLibs",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mukang": "mukang@buluo-gs.com"
+  },
+  "source": {
+    "git": "https://github.com/mukang/MKCommonLibs.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "subspecs": [
+    {
+      "name": "WebService",
+      "source_files": "MKCommonLibs/Classes/WebService/**/*",
+      "public_header_files": "MKCommonLibs/Classes/WebService/**/*.h",
+      "dependencies": {
+        "AFNetworking": [
+
+        ]
+      }
+    },
+    {
+      "name": "UI",
+      "source_files": "MKCommonLibs/Classes/UI/**/*",
+      "public_header_files": "MKCommonLibs/Classes/UI/**/*.h",
+      "dependencies": {
+        "AFNetworking": [
+
+        ]
+      }
+    }
+  ]
+}

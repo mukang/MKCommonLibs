@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MKCommonLibs'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MKCommonLibs.'
+  s.summary          = 'MKCommonLibs.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,37 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                       A MKCommonLibs.
                        DESC
 
-  s.homepage         = 'https://github.com/mukang.max@foxmail.com/MKCommonLibs'
+  s.homepage         = 'https://github.com/mukang/MKCommonLibs'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mukang.max@foxmail.com' => 'mukang@buluo-gs.com' }
-  s.source           = { :git => 'https://github.com/mukang.max@foxmail.com/MKCommonLibs.git', :tag => s.version.to_s }
+  s.author           = { 'mukang' => 'mukang@buluo-gs.com' }
+  s.source           = { :git => 'https://github.com/mukang/MKCommonLibs.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.frameworks = 'UIKit', 'MapKit'
 
-  s.source_files = 'MKCommonLibs/Classes/**/*'
+  # s.source_files = 'MKCommonLibs/Classes/**/*'
   
   # s.resource_bundles = {
   #   'MKCommonLibs' => ['MKCommonLibs/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.subspec 'WebService' do |webService|
+  webService.source_files = 'MKCommonLibs/Classes/WebService/**/*'
+  webService.public_header_files = 'MKCommonLibs/Classes/WebService/**/*.h'
+  webService.dependency 'AFNetworking'
+  end
+
+  s.subspec 'UI' do |ui|
+  ui.source_files = 'MKCommonLibs/Classes/UI/**/*'
+  ui.public_header_files = 'MKCommonLibs/Classes/UI/**/*.h'
+  ui.dependency 'AFNetworking'
+  end
 end
