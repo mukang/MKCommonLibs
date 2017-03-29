@@ -42,11 +42,7 @@
 
         ]
       },
-      "resource_bundles": {
-        "MKCommonLibs": [
-          "MKCommonLibs/Assets/*.png"
-        ]
-      }
+      "resources": "MKCommonLibs/Assets/*.png"
     }
   ]
 }

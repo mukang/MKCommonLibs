@@ -50,8 +50,6 @@ Pod::Spec.new do |s|
   ui.source_files = 'MKCommonLibs/Classes/UI/**/*'
   ui.public_header_files = 'MKCommonLibs/Classes/UI/**/*.h'
   ui.dependency 'AFNetworking'
-  ui.resource_bundles = {
-    'MKCommonLibs' => ['MKCommonLibs/Assets/*.png']
-  }
+  ui.resource = 'MKCommonLibs/Assets/*.png'
   end
 end
