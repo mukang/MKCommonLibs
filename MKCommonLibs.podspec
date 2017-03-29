@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKCommonLibs'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'MKCommonLibs.'
 
 # This description is used to generate tags and improve search results.
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   ui.public_header_files = 'MKCommonLibs/Classes/UI/**/*.h'
   ui.dependency 'AFNetworking'
   ui.resource_bundles = {
-    'MKCommonLibs' => ['MKCommonLibs/Assets/*.png']
+    'MKCommonLibs' => ['MKCommonLibs/Classes/UI/Resources/*.png']
   }
   end
 end
