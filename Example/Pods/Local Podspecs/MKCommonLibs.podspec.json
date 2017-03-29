@@ -41,6 +41,11 @@
         "AFNetworking": [
 
         ]
+      },
+      "resource_bundles": {
+        "MKCommonLibs": [
+          "MKCommonLibs/Assets/*.png"
+        ]
       }
     }
   ]
