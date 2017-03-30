@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
 
   # s.source_files = 'MKCommonLibs/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MKCommonLibs' => ['MKCommonLibs/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'MKCommonLibs' => ['MKCommonLibs/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.dependency 'AFNetworking', '~> 2.3'
@@ -44,17 +44,11 @@ Pod::Spec.new do |s|
   webService.source_files = 'MKCommonLibs/Classes/WebService/**/*'
   webService.public_header_files = 'MKCommonLibs/Classes/WebService/**/*.h'
   webService.dependency 'AFNetworking'
-  webService.resource_bundles = {
-     'webService' => ['MKCommonLibs/Assets/HD4.0.png']
-  }
   end
 
   s.subspec 'UI' do |ui|
   ui.source_files = 'MKCommonLibs/Classes/UI/**/*'
   ui.public_header_files = 'MKCommonLibs/Classes/UI/**/*.h'
   ui.dependency 'AFNetworking'
-  ui.resource_bundles = {
-     'ui' => ['MKCommonLibs/Assets/{HD4.0, HD4.7}.png']
-  }
   end
 end

@@ -14,12 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - MKCommonLibs (0.6.0):
-    - MKCommonLibs/UI (= 0.6.0)
-    - MKCommonLibs/WebService (= 0.6.0)
-  - MKCommonLibs/UI (0.6.0):
+  - MKCommonLibs (0.7.0):
+    - MKCommonLibs/UI (= 0.7.0)
+    - MKCommonLibs/WebService (= 0.7.0)
+  - MKCommonLibs/UI (0.7.0):
     - AFNetworking
-  - MKCommonLibs/WebService (0.6.0):
+  - MKCommonLibs/WebService (0.7.0):
     - AFNetworking
 
 DEPENDENCIES:
@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  MKCommonLibs: f166b592f813f48aad90cdd15e42686ffcee5bcf
+  MKCommonLibs: 338807ea19aa4219dc4130a8712bafc575922869
 
 PODFILE CHECKSUM: c256c6a678dda17cffa9b825555995105a8dae18
 

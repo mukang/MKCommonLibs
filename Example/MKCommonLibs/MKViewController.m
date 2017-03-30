@@ -7,6 +7,7 @@
 //
 
 #import "MKViewController.h"
+#import <MKCommonLibs/TCImageView.h>
 
 @interface MKViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    TCImageView *imageView = [[TCImageView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:imageView];
 }
 
 - (void)didReceiveMemoryWarning
